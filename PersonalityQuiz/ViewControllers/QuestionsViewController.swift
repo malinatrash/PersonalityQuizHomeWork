@@ -105,7 +105,7 @@ extension QuestionsViewController {
         }
     }
     
-    func showSingleStackView(with answers: [Answer]) {
+    private func showSingleStackView(with answers: [Answer]) {
         singleStackView.isHidden.toggle()
         
         for (button, answer) in zip(singleButtons, answers) {
