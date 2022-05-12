@@ -99,28 +99,28 @@
                                         <rect key="frame" x="121" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="pVD-jl-Ejp"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="vc2-kR-M9o"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICe-dw-kTL">
                                         <rect key="frame" x="121" y="46" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="hEj-mg-Kqk"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="S8D-VG-cuJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acx-pU-4Vy">
                                         <rect key="frame" x="121" y="92" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="gfw-nh-GV6"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="iuq-lU-akv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoK-Bs-95O">
                                         <rect key="frame" x="121" y="138" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="8ei-Wn-6Sv"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="UeD-2q-Mli" eventType="touchUpInside" id="xBv-4h-uT6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -188,7 +188,7 @@
                                         <rect key="frame" x="0.0" y="188" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
-                                            <action selector="multipleAnswerButtonPressed" destination="UeD-2q-Mli" eventType="touchUpInside" id="XFp-4x-Feh"/>
+                                            <action selector="multipleAnswerButtonPressed" destination="UeD-2q-Mli" eventType="touchUpInside" id="19b-XE-l3g"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -220,7 +220,7 @@
                                         <rect key="frame" x="0.0" y="82.5" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
-                                            <action selector="rangedAnswerButtonPressed" destination="UeD-2q-Mli" eventType="touchUpInside" id="Ei3-It-6oN"/>
+                                            <action selector="rangedAnswerButtonPressed" destination="UeD-2q-Mli" eventType="touchUpInside" id="xgX-cg-aFC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -264,13 +264,7 @@
                             <constraint firstItem="EPM-0M-eoA" firstAttribute="trailing" secondItem="fuE-g0-rBS" secondAttribute="trailing" constant="16" id="zAe-mI-FMk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="Rt0-TY-bXC">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="fWo-aH-5Ij">
-                            <connections>
-                                <segue destination="ybD-fs-ro5" kind="show" id="XKL-Kc-wv6"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Rt0-TY-bXC"/>
                     <connections>
                         <outlet property="multipleStackView" destination="eab-QM-nKy" id="HtE-AR-TeE"/>
                         <outlet property="questionLabel" destination="jCn-gc-uJv" id="wtW-Lo-uPH"/>
@@ -333,13 +327,17 @@
                             <constraint firstItem="zeX-df-zHG" firstAttribute="centerY" secondItem="029-ag-YrT" secondAttribute="centerY" id="iMn-6V-wcd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="NDG-ge-CvD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JAk-a2-oMR">
+                    <navigationItem key="navigationItem" title="Результат" largeTitleDisplayMode="always" id="NDG-ge-CvD">
+                        <barButtonItem key="rightBarButtonItem" title="Вернуться" id="JAk-a2-oMR">
                             <connections>
                                 <segue destination="WWM-TC-Lk4" kind="unwind" unwindAction="unwindWithSegue:" id="XzR-I1-i3C"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultDescriptionLabel" destination="ubD-vy-JkF" id="fSi-6Q-pLc"/>
+                        <outlet property="resultLabel" destination="bIB-Ip-f7f" id="6Fb-Wj-H9Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKR-tJ-42c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="WWM-TC-Lk4" userLabel="Exit" sceneMemberID="exit"/>
@@ -365,9 +363,6 @@
             <point key="canvasLocation" x="810" y="98.239436619718305"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="pSP-fU-8Xc"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
